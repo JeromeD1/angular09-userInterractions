@@ -1,0 +1,3 @@
+<section>
+    <app-kitten-card *ngFor="let kitten of kittenList" [kitten]="kitten" (adoptionEmitter)="sendAdoptedKitten(kitten)"></app-kitten-card>
+</section>

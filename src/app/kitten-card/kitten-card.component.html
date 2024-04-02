@@ -1,0 +1,11 @@
+<div>
+    <img [src]="kitten.imgSrc" alt="kitten.name" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <ng-container *ngIf="showInfo">
+        <p>Nom : {{kitten.name}}</p>
+        <p>Race : {{kitten.race}}</p>
+        <p>Date de naissance {{kitten.birthdate}}</p>
+    </ng-container>
+
+    <button (click)="adoptKitten()">Adopter</button>
+  
+  </div>

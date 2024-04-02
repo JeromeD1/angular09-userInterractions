@@ -1,9 +1,11 @@
 section {
-    width: 100vw;
+    width: 45vw;
+    border: 1px solid black;
+    min-height: 600px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-around;
     align-items: center;
+    padding: 24px;
 }

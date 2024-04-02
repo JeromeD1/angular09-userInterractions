@@ -1,0 +1,21 @@
+<form [formGroup]="kittenForm" #myForm="ngForm" (ngSubmit)="myForm.valid && onSubmit()">
+    <div>
+        <label>Nom de la salle bête : </label>
+        <input type="text" formControlName="name">
+    </div>
+    <div>
+        <label>Race de la salle bête : </label>
+        <input type="text" formControlName="race">
+    </div>
+    <div>
+        <label>Date de naissance de la salle bête : </label>
+        <input type="date" formControlName="birthdate">
+    </div>
+    <div>
+        <label>Lien de l'image de la salle bête : </label>
+        <input type="text" formControlName="imgSrc">
+    </div>
+
+    <button type="submit" [style.backgroundColor]="myForm.valid ? 'lightgreen' : null" >Ajouter une salle bête</button>
+
+</form>
